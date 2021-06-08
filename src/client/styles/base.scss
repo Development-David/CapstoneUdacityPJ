@@ -1,0 +1,73 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 2;
+    background-color: #fdf4f2 ;
+    // background:linear-gradient(140deg, white 15%, #05b3d6 30%, #ffffff 80%);
+}
+
+section {
+    max-width: 800px;
+    margin: 50px auto;
+}
+.inputs-section{
+   background-color: #FFFFFF;
+}
+
+#info-travel {
+    border: 1px solid black;
+    padding: 15px;
+    background-color: #fdf4f2;
+    width:100%;
+    height:150px;
+}
+#img-place{
+    float:left;
+    vertical-align: text-top;
+    height:100%;
+}
+.weather-items{
+    padding:5px;
+    margin-right:10px;
+}
+.geo-result{
+    padding:5px;
+}
+.geo-result label{
+    margin-left: 10px;
+}
+#close{
+    color:red;
+    float: right;
+    cursor: pointer;
+}
+@media only screen and (max-width: 600px) {
+    #info-travel {
+      font-size:2.7vw;
+    }
+    #img-place{
+        width:40vw;
+    }
+
+}
+#info-travel i{
+    margin-right:5px;
+    margin-left:10px;
+}
+.button-check{
+    background-color: #ff4924;
+    border: none;
+    color: #FFFFFF;
+    padding: 15px 32px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    margin: 16px 0 !important;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}

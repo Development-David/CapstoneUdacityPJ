@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>UDACITY FRONT END</title>
+    </head>
+
+    <body>
+
+        <header>
+            <div class="fa fa-plane logo">
+                CAPSTONE PROJECT
+            </div>
+        </header>
+
+        <main class="main-section">
+            <section class="inputs-section" >
+                <form class="" onsubmit="return Client.handleSubmit(event)">
+                    <input id="place" type="text" name="input" value="" placeholder="Enter the location name" required> 
+                    <input id="date" type="date" name="input" value="" required>
+                    <input class="button-check" type="submit" name="" value="SEARCH" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">
+                </form>
+            </section>
+
+            <section id="results">
+
+            </section>
+        </main>
+
+        <footer>
+            <p>A project to nanodegree program</p>
+        </footer>
+        <script>
+            // Check that service workers are supported
+            if ('serviceWorker' in navigator) {
+                // Use the window load event to keep the page load performant
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('/service-worker.js');
+                });
+            }
+        </script>
+    </body>
+</html>
